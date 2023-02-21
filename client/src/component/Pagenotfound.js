@@ -4,7 +4,7 @@ const Pagenotfound = () => {
   return (
     <div>
         <center><h2>Page Not Found 404</h2>
-            <h1>create new file</h1>
+            <h1>create new file and start</h1>
         </center>
     </div>
   )
