@@ -1,11 +1,17 @@
 import './App.css';
+import { lazy } from 'react';
 import {Routes,Route} from 'react-router-dom';  
-import Navbar from './component/Navbar';
-import Home from './component/Home';
-import Register from './component/Register';
-import Edit from './component/Edit';
-import Details from './component/Details';
-import Pagenotfound from './component/Pagenotfound';
+// import Home from './component/Home';
+// import Register from './component/Register';
+// import Edit from './component/Edit';
+// import Details from './component/Details';
+// import Pagenotfound from './component/Pagenotfound';
+const Home = lazy(() => import('./component/Home'));
+const Register = lazy(() => import('./component/Register'));
+const Navbar = lazy(() => import('./component/Navbar'));
+const Edit = lazy(() => import('./component/Edit'));
+const Details = lazy(() => import('./component/Details'));
+const Pagenotfound = lazy(() => import('./component/Pagenotfound'));
 
 function App() {
   return (
